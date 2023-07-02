@@ -1,7 +1,7 @@
 .App {
   height: 100vh;
   width: 100%;
-  max-width: 1050px;
+  max-width: 1536px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,27 +11,74 @@
 }
 
 .app-container {
-  height: 600px;
+  height: 896px;
+  width: 100%;
+  /* padding-top: 25px;
+  padding-bottom: 25px;*/
+
+  /* Equivalent to shadow-inner in Tailwind CSS */
+
   display: flex;
+
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: flex-center;
+  justify-content: space-between;
 }
 
-.divider {
-  margin-bottom: 15px;
-}
-
-.Config {
-  width: 300px;
-  height: 100%;
+.app-controller {
+  height: 845px;
+  width: 100%;
+  min-width: 280;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.app-viewer {
+  height: 845px;
+  width: 1096px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.divider {
+  margin-bottom: 25px;
+}
+
+.button-divider {
+  margin-bottom: 10px;
+}
+
+.form-divider {
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #374151;
 }
 
 .toogle {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
